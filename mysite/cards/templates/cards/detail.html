@@ -4,11 +4,13 @@
 
     owner: {{ card.owner }}
     <br>
-    url: {{ card.url }}
+    url: <a href="{{ card.url }}">{{ card.url }}</a>
     <br>
     name: {{ card.name }}
     <br>
-    image: {{ card.image }}
+    image:
+    <br>
+    <img src="{{ card.image.url }}">
     <br>
     media_type: {{ card.media_type }}
     <br>
